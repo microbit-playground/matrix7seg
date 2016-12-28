@@ -65,19 +65,19 @@ The MAX7219 uses SPI so must connect on pins 13 and 14 which are not exposed. Yo
 
 This is the wiring table:
 
-| My Module Label | Possible Label Mames | microbit pin | Microbit doc names for pin |
+| My Module Label | Possible Label Names | microbit pin | Microbit doc names for pin |
 |--- |--- |--- |--- |
 | VCC |  | 3v | |
 | GND |  | GND | |
-| DIN | SOMI, SDI, DI, DIN, SI, MRST. | 14 | MISO (master in, slave out) |
-| CS | nCS, CSN, nSS, STE, SYNC | pin0 | |
+| DIN | SOMI, SDI, DI, DIN, SI, MRST. | pin14 | MISO (master in, slave out) |
+| CS | nCS, CSN, nSS, STE, SYNC | pin0 | n/a, but frequently called _chip select_ |
 | CLK | SCLK | pin13 | Serial Clock | 
 
 * *Your module might also have a `DOUT` pin. Ignore it!*
 
 ## Using in Python
 
-With matrix7seg.py on the microbit, it is possible to use it to drive the display.
+With `matrix7seg` on the microbit and the wires connected it is possible to drive the display:
 
 First import the class and initialise it:
 
