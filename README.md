@@ -179,4 +179,7 @@ while True:
 ### Notes 
 * Memory can get tight so be careful about what is imported from the microbit module. To use the 7-segment display, you only need to import spi from the microbit module, eg: `from microbit import spi`. To show the temperature on the display as in the examples above, you would need to import that as well: `from microbit import spi, temperature`
 
-* This is a mash up of [https://bitbucket.org/thesheep/micropython-max7219/src/280d2da980f7d5dc14683246a808cf6a908d087d/max7219.py?at=default&fileviewer=file-view-default](Radomir Dopieralski's driver) & [https://github.com/rm-hull/max7219/blob/master/README.rst](Richard Hull's Raspberry Pi driver.)
+* This is a mash up of [Radomir Dopieralski's driver][1] & [Richard Hull's Raspberry Pi driver.][2]
+
+[1]: https://bitbucket.org/thesheep/micropython-max7219/src/280d2da980f7d5dc14683246a808cf6a908d087d/max7219.py?at=default&fileviewer=file-view-default
+[2]: https://github.com/rm-hull/max7219/blob/master/README.rst
