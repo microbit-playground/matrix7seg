@@ -79,7 +79,7 @@ This is the wiring table:
 
 With `matrix7seg` on the microbit and the wires connected it is possible to drive the display:
 
-First import the class and initialise it:
+First import the class and initialise an instance of it:
 
 ```
 # only spi is imported to save memory
@@ -154,7 +154,7 @@ from matrix7seg import Matrix7seg
 
 def total_acceleration():
     """
-    return total acceleration in g across all 3 axes.
+    return total acceleration in milli-g across all 3 axes.
     """
     x = accelerometer.get_x()
     y = accelerometer.get_y()
