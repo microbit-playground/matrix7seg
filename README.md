@@ -59,7 +59,7 @@ The MAX7219 is controlled over SPI. In addition to the VCC and GND wires, three 
 
 #### Wiring
 
-![default display](images/segment_wired.jpg)
+![default display](images/segment-wired.jpg)
 
 The MAX7219 uses SPI so must connect on pins 13 and 14 which are not exposed. You will need a breakout board (above) to access them.
 
@@ -109,21 +109,21 @@ Essentially it updates the display.
 
 ## Examples:
 
-![default display](images/segment_default.jpg)
+![default display](images/segment-default.jpg)
 
 ```
 # display a number
 seg_display.write_number(1234)
 ```
 
-![zerofill](images/segment_zerofill.jpg)
+![zerofill](images/segment-zerofill.jpg)
 
 ```
-# empty 7-segments fileld with 0
+# empty 7-segments filled with 0
 seg_display.write_number(1234, zeroPad=True)
 ```
 
-![go left](images/segment_left.jpg)
+![go left](images/segment-left.jpg)
 ```
 # justify numbers to left
 seg_display.write_number(1234, leftJustify=True)
