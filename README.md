@@ -69,7 +69,7 @@ This is the wiring table:
 |--- |--- |--- |--- |
 | VCC |  | 3v | |
 | GND |  | GND | |
-| DIN | SOMI, SDI, DI, DIN, SI, MRST. | pin14 | MISO (master in, slave out) |
+| DIN | SOMI, SDI, DI, DIN, SI, MRST. | pin15 | MOSI |
 | CS | nCS, CSN, nSS, STE, SYNC | pin0 | n/a, but frequently called _chip select_ |
 | CLK | SCLK | pin13 | Serial Clock | 
 
